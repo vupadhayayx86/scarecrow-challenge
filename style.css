@@ -15,7 +15,6 @@ html, body {
     display: block;
 }
 .heading{
-   
     height: 15vh;
     width: 100%;
     font-size: 40px;
@@ -214,13 +213,13 @@ html, body {
     
     .heading{
         justify-content: center;
-       
+        margin: 0px;
     }
     .heading span{
-        margin: 0;
+        margin:0px;
     }
     .banner_img img {
-        width: 420px;
+        width: 360px;
         height: auto;
     }
     
@@ -229,7 +228,6 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
     .text h1{
         text-align: center;
@@ -238,13 +236,13 @@ html, body {
     .text_info {
         width: 320px;
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
        
     }
     
     .text_info button {
-        height: 34px;
-        width: 250px;
-        font-size: 8px;
+        height: 58px;
+        width: 320px;
+        font-size: 30px;
     }
 }
