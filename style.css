@@ -1,131 +1,228 @@
-html,body{
+/* Default styles */
+
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
 }
-.container{
+
+.container {
     width: 100%;
     height: auto;
-    margin:auto;
-    padding:0;
-    height:max-content;
-    
+    margin: auto;
+    padding: 0;
+    height: max-content;
     display: block;
 }
-.main_content{
+
+.main_content {
     margin-top: 15vh;
-    margin-bottom: 15vh;   
+    margin-bottom: 15vh;
     display: flex;
     justify-content: center;
-    
     height: auto;
-   width: auto;
-   gap: 80px;
+    width: auto;
+    gap: 80px;
 }
 
-
-
-.banner_img img{
+.banner_img img {
     height: 560px;
     width: 650px;
 }
 
-.text_content{
-   
-    
-    
-}
-
-.text{
+.text {
     width: 520px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     padding-left: 20px;
-    
 }
 
-.text_content h1{
+.text_content h1 {
     font-size: 48px;
     line-height: 75px;
     letter-spacing: 1px;
     font-family: Tektur;
 }
 
-.text_info{
+.text_info {
     font-size: 24px;
     font-family: Tektur;
     width: 350px;
     padding-left: 20px;
-   
     font-weight: 100;
-    color:rgb(72, 71, 71);
+    color: rgb(72, 71, 71);
     height: max-content;
 }
 
-.text_info button{
+.text_info button {
     background-color: rgb(45, 44, 44);
-    color:rgb(156, 152, 152);
+    color: rgb(156, 152, 152);
     height: 55px;
     width: 200px;
     font-size: 18px;
     font-family: Tektur;
     text-align: center;
-    border:none;
+    border: none;
     margin-top: 25px;
     cursor: pointer;
 }
-@media screen and (max-width:900px) {
-    
-    .banner_img img{
-        height: 360px;
-        width: 450px;
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1200px) {
+       
+    .main_content {
+        
+        gap: 60px;
     }
     
-}
-@media screen and (max-width:1200px) {
-    
-    .banner_img img{
-        height: 360px;
-        width: 450px;
+    .banner_img img {
+        height: 460px;
+        width: 550px;
     }
-    .text{
+    
+    .text {
         width: 420px;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        padding-left: 20px;
         
     }
-
-    .text_content h1{
+    
+    .text_content h1 {
         font-size: 44px;
-        line-height: 70px;
-        letter-spacing: 1px;
-        font-family: Tektur;
+        line-height: 65px;
     }
     
-    .text_info{
-        font-size: 24px;
-        font-family: Tektur;
-        width: 350px;
-        padding-left: 20px;
-       
-        font-weight: 100;
-        color:rgb(72, 71, 71);
-        height: max-content;
-    }
-    
-    .text_info button{
-        background-color: rgb(45, 44, 44);
-        color:rgb(156, 152, 152);
-        height: 55px;
-        width: 200px;
+    .text_info {
         font-size: 18px;
         font-family: Tektur;
-        text-align: center;
-        border:none;
-        margin-top: 25px;
-        cursor: pointer;
+        width: 300px;
+       
+    }
+    
+    .text_info button {
+        
+        height: 45px;
+        width: 170px;
+        font-size: 16px;
+        
     }
     
 }
 
+
+/*Width below 1050*/
+@media screen and (max-width: 1050px) {
+       
+    .main_content {
+        
+        gap: 40px;
+    }
+    
+    .banner_img img {
+        height: 330px;
+        width: 420px;
+    }
+    
+    .text {
+        width: 350px;
+        
+    }
+    
+    .text_content h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .text_info {
+        font-size: 16px;
+        font-family: Tektur;
+        width: 260px;
+       
+    }
+    
+    .text_info button {
+        
+        height: 40px;
+        width: 150px;
+        font-size: 14px;
+        
+    }
+    
+}
+
+/*Media query below 850*/
+
+@media screen and (max-width: 850px) {
+       
+    .main_content {
+        
+        gap: 30px;
+    }
+    
+    .banner_img img {
+        height: 260px;
+        width: 310px;
+    }
+    
+    .text {
+        width: 300px;
+        
+    }
+    
+    .text_content h1 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    
+    .text_info {
+        font-size: 14px;
+        font-family: Tektur;
+        width: 220px;
+       
+    }
+    
+    .text_info button {
+        
+        height: 34px;
+        width: 120px;
+        font-size: 10px;
+        
+    }
+    
+}
+
+
+
+@media (max-width: 670px) {
+    .main_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner_img img {
+        width: 420px;
+        height: auto;
+    }
+    
+    .text_content{
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .text h1{
+        text-align: center;
+    }
+    
+    .text_info {
+        width: 320px;
+        text-align: center;
+        font-size: 18px;
+       
+    }
+    
+    .text_info button {
+        height: 34px;
+        width: 250px;
+        font-size: 8px;
+    }
+}
