@@ -14,10 +14,21 @@ html, body {
     height: max-content;
     display: block;
 }
-
+.heading{
+   
+    height: 15vh;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    font-family: Inconsolata;
+    font-weight: bold;
+}
+.heading span{
+    margin-left: 130px;
+}
 .main_content {
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    
     display: flex;
     justify-content: center;
     height: auto;
@@ -38,18 +49,16 @@ html, body {
 }
 
 .text_content h1 {
-    font-size: 48px;
+    font-size: 52px;
     line-height: 75px;
-    letter-spacing: 1px;
-    font-family: Tektur;
+    font-family: Space Mono;
 }
 
 .text_info {
-    font-size: 24px;
-    font-family: Tektur;
+    font-size: 20px;
+    font-family: Space Mono;
     width: 350px;
     padding-left: 20px;
-    font-weight: 100;
     color: rgb(72, 71, 71);
     height: max-content;
 }
@@ -60,7 +69,7 @@ html, body {
     height: 55px;
     width: 200px;
     font-size: 18px;
-    font-family: Tektur;
+    font-family: Space Mono;
     text-align: center;
     border: none;
     margin-top: 25px;
@@ -74,7 +83,12 @@ html, body {
         
         gap: 60px;
     }
-    
+    .heading{
+        
+        height: 10vh;
+        font-size: 36px;
+        text-align: center;
+    }
     .banner_img img {
         height: 460px;
         width: 550px;
@@ -92,7 +106,7 @@ html, body {
     
     .text_info {
         font-size: 18px;
-        font-family: Tektur;
+        font-family: Space Mono;
         width: 300px;
        
     }
@@ -133,7 +147,7 @@ html, body {
     
     .text_info {
         font-size: 16px;
-        font-family: Tektur;
+        font-family: Space Mono;
         width: 260px;
        
     }
@@ -156,6 +170,7 @@ html, body {
         
         gap: 30px;
     }
+   
     
     .banner_img img {
         height: 260px;
@@ -174,7 +189,7 @@ html, body {
     
     .text_info {
         font-size: 14px;
-        font-family: Tektur;
+        font-family: Space Mono;
         width: 220px;
        
     }
@@ -197,6 +212,13 @@ html, body {
         align-items: center;
     }
     
+    .heading{
+        justify-content: center;
+       
+    }
+    .heading span{
+        margin: 0;
+    }
     .banner_img img {
         width: 420px;
         height: auto;
